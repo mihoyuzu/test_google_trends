@@ -1,4 +1,4 @@
 .idea
 db.splite3
-test_google_trends/__pycache__
-
+__pycache__
+.DS_Store
