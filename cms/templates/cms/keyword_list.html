@@ -1,0 +1,22 @@
+{% extends "cms/base.html" %}
+{% block title %}キーワード一覧{% endblock title %}
+
+{% block content %}
+    <div>
+        <table>
+            <thead>
+            <tr>
+                <th>キーワード</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for data in object_list %}
+                <tr>
+                    <td>{{ data.0 }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% csrf_token %}
+    </div>
+{% endblock content %}
